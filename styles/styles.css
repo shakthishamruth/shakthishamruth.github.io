@@ -5,21 +5,20 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #e3f2fd;
-    /* Soft Blue */
-    color: #023e8a;
-    /* Deep Navy */
+    background: #F5E8C7;
+    /* Light Beige */
+    color: #363062;
+    /* Dark Purple */
 }
 
 header {
-    background: #0077b6;
-    /* Deep Blue */
+    background: #363062;
+    /* Dark Purple */
     color: white;
     padding: 20px 0;
     text-align: center;
     font-size: 1.5rem;
 }
-
 
 nav ul {
     list-style: none;
@@ -50,8 +49,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #90e0ef;
-    /* Lighter blue on hover */
+    color: #818FB4;
+    /* Soft Blue on hover */
 }
 
 section {
@@ -72,8 +71,10 @@ section {
 }
 
 .project {
-    background: #caf0f8;
-    /* Light Cyan */
+    background: #435585;
+    /* Steel Blue */
+    color: white;
+    /* White text inside project */
     padding: 15px;
     border-radius: 8px;
     flex: 1;
@@ -83,16 +84,33 @@ section {
 
 .project:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 119, 182, 0.2);
+    box-shadow: 0 10px 20px rgba(67, 85, 133, 0.2);
+}
+
+/* Change links inside project cards to white */
+.project a {
+    color: white;
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #ffffff;
+    /* Ensures the link stays white on hover */
 }
 
 /* Certificate */
+
+#certifications>ul {
+    list-style-type: none;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
 
 #certifications>ul>li {
     margin-bottom: 10px;
 }
 
-/*Profile*/
+/* Profile */
 
 .profile-grid {
     display: grid;
@@ -118,16 +136,8 @@ section {
     transform: scale(1.1);
 }
 
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #0077b6;
-    /* Deep Blue */
-    color: white;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0;
+/* Contact */
+#contact>p {
+    padding-left: 1rem;
+    margin-left: 1rem;
 }
