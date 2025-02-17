@@ -31,15 +31,21 @@ nav ul li {
 }
 
 @media (max-width: 800px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
     nav ul li {
-        display: block;
-        margin: 10px 15px;
+        margin: 10px 0;
     }
 
     header {
         font-size: 1rem;
     }
 }
+
 
 nav ul li a {
     color: white;
