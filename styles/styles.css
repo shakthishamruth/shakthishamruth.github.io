@@ -1,3 +1,13 @@
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
 body {
     height: 100%;
     display: flex;
@@ -36,14 +46,29 @@ nav ul li {
 }
 
 @media (max-width: 800px) {
+    .hamburger {
+        display: block;
+    }
+
     nav ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        text-align: center;
+        display: none;
+        flex-direction: column;
+        background: #363062;
+        position: absolute;
+        top: 80px;
+        /* Moved the menu lower to avoid overlapping the name */
+        left: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul.active {
+        display: flex;
     }
 
     nav ul li {
-        margin: 10px 0;
+        text-align: center;
+        padding: 10px 0;
     }
 
     header {
