@@ -22,9 +22,11 @@ body {
 }
 
 h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
 
 header {
     background: #363062;
@@ -105,7 +107,6 @@ section {
 }
 
 
-/* Change links inside project cards to white */
 .project a {
     color: white;
     text-decoration: none;
@@ -113,7 +114,6 @@ section {
 
 .project a:hover {
     color: #ffffff;
-    /* Ensures the link stays white on hover */
 }
 
 /* Certificate */
@@ -162,6 +162,10 @@ section {
 
 /* Smaller screen */
 @media (max-width: 800px) {
+    *:not(h2, h1) {
+        font-size: 95%;
+    }
+
     .hamburger {
         display: block;
     }
